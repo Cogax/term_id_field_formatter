@@ -1,0 +1,4 @@
+name = Term ID Field Formatter
+description = Provides a term-reference field formatter for the term ID.
+core = 7.x
+dependencies[] = taxonomy
