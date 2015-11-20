@@ -7,7 +7,7 @@
 /**
  *  Implements hook_field_formatter_info().
  */
-function taxonomy_field_formatter_id_field_formatter_info() {
+function term_id_field_formatter_field_formatter_info() {
   return array(
     'taxonomy_field_formatter_id' => array(
       'label' => t('ID'),
@@ -17,9 +17,9 @@ function taxonomy_field_formatter_id_field_formatter_info() {
 }
 
 /**
- *  Implements hook_view().
+ *  Implements hook_field_formatter_view().
  */
-function taxonomy_field_formatter_id_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
+function term_id_field_formatter_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
   $element = array();
 
   if($display['type'] == 'taxonomy_field_formatter_id') {
